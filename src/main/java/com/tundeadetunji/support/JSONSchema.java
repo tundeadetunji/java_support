@@ -15,6 +15,7 @@ public class JSONSchema {
         SchemaGenerator generator = new SchemaGenerator(config);
         JsonNode jsonSchema = generator.generateSchema(clazz);
 
+
         return jsonSchema.toPrettyString();
     }
 
